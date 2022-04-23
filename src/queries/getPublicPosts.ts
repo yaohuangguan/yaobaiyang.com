@@ -3,7 +3,13 @@ import { graphql } from 'gatsby'
 export const getPublicPostQuery = graphql`
   query getAllMarkdownRemark {
     allMarkdownRemark(
-      filter: { frontmatter: { published: { eq: true }, kind: { eq: "post" } } }
+      filter: {
+        frontmatter: {
+          published: { eq: true }
+          private: { eq: false }
+          kind: { eq: "post" }
+        }
+      }
     ) {
       edges {
         node {
