@@ -82,6 +82,7 @@
     "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "serve": "gatsby serve",
+    "pre-commit":"tsc && yarn lint-staged",
     "clean": "gatsby clean",
     "lint-staged": "lint-staged",
     "eslint": "eslint . --ext .tsx --fix",
