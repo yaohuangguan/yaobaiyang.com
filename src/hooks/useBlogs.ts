@@ -1,4 +1,6 @@
-import { graphql, useStaticQuery } from 'gatsby'
+import { getPrivatePostQuery } from '@queries/getPrivatePosts'
+import { getPublicPostQuery } from '@queries/getPublicPosts'
+import { useStaticQuery } from 'gatsby'
 
 export type BlogItemNode = {
   excerpt: string
@@ -35,51 +37,14 @@ type BlogListItem = {
   node: BlogItemNode
 }
 
-export const useBlogs = (): BlogListItem[] => {
-  const blogs = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(
-        filter: {
-          frontmatter: { published: { eq: true }, kind: { eq: "post" } }
-        }
-      ) {
-        edges {
-          node {
-            id
-            fields {
-              slug
-            }
-            excerpt
-            frontmatter {
-              categories
-              cover {
-                childImageSharp {
-                  fluid(maxWidth: 1440, webpQuality: 10) {
-                    srcWebp
-                  }
-                }
-              }
-              coverAuthor
-              coverOriginalUrl
-              date(fromNow: true)
-              description
-              keywords
-              kind
-              published
-              title
-            }
-            html
-            timeToRead
-            wordCount {
-              paragraphs
-              sentences
-              words
-            }
-          }
-        }
-      }
-    }
-  `)
+type Props = {
+  isPrivate?: boolean
+}
+
+export const useBlogs = ({ isPrivate = false }: Props): BlogListItem[] => {
+  const blogs = useStaticQuery(
+    !isPrivate ? getPublicPostQuery : getPrivatePostQuery
+  )
 
   return blogs.allMarkdownRemark.edges
 }

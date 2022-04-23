@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 
 import { Layout } from '../components/Layout'
 import Seo from '../components/Seo'
@@ -9,7 +9,7 @@ import { BlogCard } from '@components/BlogCard'
 
 const IndexPage = () => {
   const data = useSiteMeta()
-  const posts = useBlogs()
+  const posts = useBlogs({ isPrivate: false })
 
   console.log(posts)
   return (

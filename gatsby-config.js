@@ -67,6 +67,7 @@ module.exports = {
           '@pages': 'src/pages',
           '@templates': 'src/templates',
           '@utils': 'src/utils',
+          '@queries': 'src/queries',
         },
         extensions: ['js', 'ts', 'jsx', 'tsx'],
       },
