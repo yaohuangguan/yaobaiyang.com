@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "yaobaiyang.com",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A version number X for upgrade of bananaboom space",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Sam",
   "dependencies": {
     "gatsby": "^4.12.1",
     "gatsby-plugin-gatsby-cloud": "^4.12.1",
@@ -17,15 +17,46 @@
     "prop-types": "^15.8.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-typography": "^0.16.20",
+    "typography": "^0.16.21",
+    "prismjs": "^1.25.0",
+    "qs": "6.10.1",
+    "ramda": "0.27.1",
+    "dayjs": "1.10.7"
   },
   "devDependencies": {
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "@types/node": "14.18.1",
+    "@types/react": "17.0.38",
+    "@types/react-dom": "17.0.11",
+    "@types/react-helmet": "6.1.5",
+    "@types/typography": "0.16.4",
+    "@typescript-eslint/eslint-plugin": "5.10.0",
+    "eslint-plugin-import": "2.25.3",
+    "@typescript-eslint/parser": "5.10.0",
+    "eslint": "8.5.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-loader": "4.0.2",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.27.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.0.1",
+    "ts-node": "10.4.0",
+    "typescript": "4.4.4",
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "@types/qs": "6.9.7",
+    "@types/ramda": "0.27.48"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "react",
+    "blog",
+    "dsg"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -33,13 +64,16 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "lint-staged": "lint-staged",
+    "eslint": "eslint . --ext .ts .js",
+    "postinstall": "husky install",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/yaohuangguan/yaobaiyang.com"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/yaohuangguan/yaobaiyang.com/issues"
   }
 }

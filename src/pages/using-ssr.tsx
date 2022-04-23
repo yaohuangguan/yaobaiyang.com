@@ -1,8 +1,8 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react'
+import { Link } from 'gatsby'
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import { Layout } from '../components/layout'
+import Seo from '../components/seo'
 
 const UsingSSR = ({ serverData }) => {
   return (
@@ -10,13 +10,13 @@ const UsingSSR = ({ serverData }) => {
       <Seo title="Using SSR" />
       <h1>SSR page</h1>
       <img
-        style={{ width: "300px" }}
+        style={{ width: '300px' }}
         alt="A random dog"
         src={serverData.message}
       />
       <p>Welcome to a server side rendered page with a random dog photo</p>
       <p>
-        To learn more, head over to our{" "}
+        To learn more, head over to our{' '}
         <a href="https://www.gatsbyjs.com/docs/reference/rendering-options/server-side-rendering/">
           documentation about Server Side Rendering
         </a>
