@@ -11,6 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
+  border: 10px solid #333;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

@@ -1,0 +1,16 @@
+export default [
+  'blog',
+  'engineering leader',
+  'engineering leadership',
+  'engineering manager',
+  'engineering management',
+  'gatsby',
+  'javascript',
+  'sam yao',
+  'yaobaiyang.com',
+  'react',
+  'moviegoer',
+  'typescript',
+  'study aboard',
+  'international',
+]

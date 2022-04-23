@@ -1,42 +1,39 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import * as React from 'react'
+import { Link } from './Link'
+import s from 'styled-components'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+type Props = {
+  siteTitle: string
+}
+
+const Header: React.FC<Props> = ({ siteTitle }) => (
+  <Container>
     <div
       style={{
-        margin: `0 auto`,
+        margin: '0 auto',
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <BrandTitle>
+        <StyledLink to="/">{siteTitle}</StyledLink>
+      </BrandTitle>
     </div>
-  </header>
+  </Container>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const Container = s.header`
+    background: rebeccapurple;
+    margin-bottom: 1.45rem;
+`
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+const BrandTitle = s.h3`
+    margin: 0;
+`
+
+const StyledLink = s(Link)`
+    color: white;
+    text-decoration: none;
+`
 
 export default Header
