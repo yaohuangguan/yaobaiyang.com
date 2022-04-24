@@ -1,9 +1,9 @@
 import * as React from 'react'
-import { Link } from './Link'
+import { Link } from './link'
 import s from 'styled-components'
 import { Grid, Space } from '@arco-design/web-react'
-import { LanguageSelector } from './LanguageSelector'
-import { DarkmodeToggler } from './DarkmodeToggler'
+import { LanguageSelector } from './languageSelector'
+import { DarkmodeToggler } from './darkModeToggler'
 import { useTranslation } from 'react-i18next'
 
 const { Row, Col } = Grid

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Layout as ArcoLayout } from '@arco-design/web-react'
-import Header from './Header'
+import Header from './header'
 
 export const Layout: React.FC = ({ children }) => {
   const data = useStaticQuery(graphql`
