@@ -1,9 +1,8 @@
 import React from 'react'
-import { Layout } from '../components/Layout'
-import Seo from '../components/Seo'
+import { Layout } from '@components/Layout'
+import Seo from '@components/Seo'
 import { graphql } from 'gatsby'
-import { rhythm } from '../utils/typography'
-import s from 'styled-components'
+import { rhythm } from '@utils/typography'
 import { BackTop } from '@arco-design/web-react'
 
 export const pageQuery = graphql`
