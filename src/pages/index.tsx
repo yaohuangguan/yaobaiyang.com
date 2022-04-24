@@ -3,7 +3,7 @@ import React from 'react'
 import { Layout } from '@components/layout'
 import Seo from '@components/seo'
 
-import { BlogCard } from '@components/blogCard'
+import { BlogCard } from '@components/blog-card'
 import { graphql } from 'gatsby'
 import { BlogItemNode } from '@typings/blogItem'
 import { BackTop } from '@arco-design/web-react'
