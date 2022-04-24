@@ -5,7 +5,7 @@ import Header from './Header'
 
 export const Layout: React.FC = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query {
       site {
         siteMetadata {
           title
