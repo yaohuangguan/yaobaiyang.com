@@ -37,7 +37,6 @@ const createBlogPostPages = async (graphql, createPage) => {
 
     createPage({
       path: post.node.fields.slug,
-      deferred: true,
       component: path.resolve('./src/templates/BlogPost.tsx'),
       context: {
         slug: post.node.fields.slug,

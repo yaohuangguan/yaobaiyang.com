@@ -14,6 +14,9 @@ type Props = {
 
 const Header: React.FC<Props> = ({ siteTitle }) => {
   const { t } = useTranslation('global')
+  const isRootPath =
+    typeof window !== 'undefined' && window.location.pathname === '/'
+
   return (
     <StyledHeader>
       <Col flex="auto">
@@ -23,7 +26,7 @@ const Header: React.FC<Props> = ({ siteTitle }) => {
           </StyledLink>
         </BrandTitle>
       </Col>
-      {window.location.pathname === '/' && (
+      {isRootPath && (
         <Col flex="230px">
           <Space>
             <StyledLink to="/">{t('label.blogs')}</StyledLink>
