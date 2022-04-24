@@ -1,0 +1,10 @@
+{
+    "title:": "Global",
+    "language":{
+        "en": "English",
+        "zh": "中文"
+    },
+    "label": {
+        "read_more": "Read More"
+    }
+}

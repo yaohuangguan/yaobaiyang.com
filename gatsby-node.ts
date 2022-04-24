@@ -1,7 +1,7 @@
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
-async function createBlogPostPages(graphql, createPage) {
+const createBlogPostPages = async (graphql, createPage) => {
   const result = await graphql(
     `
       {

@@ -1,9 +1,11 @@
 import { useSiteMeta } from '@hooks/useSiteMeta'
 import * as React from 'react'
 import { Layout } from '../components/Layout'
-import Seo from '../components/Seo'
+import Seo from '../components/SEO'
 import { graphql } from 'gatsby'
 import { rhythm } from '../utils/typography'
+import s from 'styled-components'
+import { BackTop } from '@arco-design/web-react'
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -16,9 +18,7 @@ export const pageQuery = graphql`
       frontmatter {
         cover {
           childImageSharp {
-            fluid(maxWidth: 1440, webpQuality: 10) {
-              srcWebp
-            }
+            gatsbyImageData
             id
           }
         }
@@ -59,13 +59,19 @@ const BlogPost = ({ data, pageContext }) => {
         keywords={post.frontmatter.keywords}
       />
 
-      <div
+      <StyledContent
         style={{ marginTop: rhythm(1) }}
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
+
+      <BackTop visibleHeight={30} style={{ position: 'fixed' }} />
     </Layout>
   )
 }
+
+const StyledContent = s.div`
+  font-famlily: FilsonSoftRegular, sans-serif;
+`
 
 export default BlogPost

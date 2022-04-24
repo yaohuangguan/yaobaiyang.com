@@ -3,6 +3,7 @@ import React from 'react'
 
 type Props = {
   to: string
+  className?: string
 }
 
 export const Link: React.FC<Props> = ({ ...props }) => (

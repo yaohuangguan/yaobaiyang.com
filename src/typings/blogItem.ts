@@ -1,7 +1,3 @@
-import { getPrivatePostQuery } from '@queries/getPrivatePosts'
-import { getPublicPostQuery } from '@queries/getPublicPosts'
-import { useStaticQuery } from 'gatsby'
-
 export type BlogItemNode = {
   excerpt: string
   fields: { slug: string }
@@ -9,9 +5,7 @@ export type BlogItemNode = {
     categories: string[]
     cover: {
       childImageSharp: {
-        fluid: {
-          srcWebp: string
-        }
+        gatsbyImageData: any
       }
     }
     coverAuthor: string
@@ -33,18 +27,6 @@ export type BlogItemNode = {
   }
 }
 
-type BlogListItem = {
+export type BlogListItem = {
   node: BlogItemNode
-}
-
-type Props = {
-  isPrivate?: boolean
-}
-
-export const useBlogs = ({ isPrivate = false }: Props): BlogListItem[] => {
-  const blogs = useStaticQuery(
-    !isPrivate ? getPublicPostQuery : getPrivatePostQuery
-  )
-
-  return blogs.allMarkdownRemark.edges
 }

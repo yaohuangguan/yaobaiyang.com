@@ -30,20 +30,21 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'yaobaiyang.com',
+        short_name: 'samyao',
         start_url: '/',
         background_color: '#663399',
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/static/favicon.png', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     'gatsby-plugin-offline',
+    'gatsby-plugin-dark-mode',
     {
       resolve: 'gatsby-plugin-typography',
       options: {
@@ -67,7 +68,7 @@ module.exports = {
           '@pages': 'src/pages',
           '@templates': 'src/templates',
           '@utils': 'src/utils',
-          '@queries': 'src/queries',
+          '@typings': 'src/typings',
         },
         extensions: ['js', 'ts', 'jsx', 'tsx'],
       },
@@ -76,6 +77,12 @@ module.exports = {
     //   resolve: 'gatsby-plugin-favicon',
     //   options: { logo: './static/favicon.png' },
     // },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: { id: 'ldl2nlv' },
+      },
+    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {

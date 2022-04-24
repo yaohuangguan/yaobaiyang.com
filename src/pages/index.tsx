@@ -1,25 +1,74 @@
 import React from 'react'
 
 import { Layout } from '../components/Layout'
-import Seo from '../components/Seo'
-import { useSiteMeta } from '@/hooks/useSiteMeta'
+import Seo from '../components/SEO'
 
-import { useBlogs } from '@hooks/useBlogs'
 import { BlogCard } from '@components/BlogCard'
+import { graphql } from 'gatsby'
+import { BlogItemNode } from '@typings/blogItem'
+import { BackTop } from '@arco-design/web-react'
 
-const IndexPage = () => {
-  const data = useSiteMeta()
-  const posts = useBlogs({ isPrivate: false })
+type Props = {
+  data: { allMarkdownRemark: { edges: { node: BlogItemNode }[] } }
+}
 
-  console.log(posts)
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          published: { eq: true }
+          private: { eq: false }
+          kind: { eq: "post" }
+        }
+      }
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          excerpt
+          frontmatter {
+            categories
+            cover {
+              childImageSharp {
+                gatsbyImageData(width: 700, height: 300)
+              }
+            }
+            coverAuthor
+            coverOriginalUrl
+            date(fromNow: true)
+            description
+            keywords
+            kind
+            published
+            title
+          }
+          html
+          timeToRead
+          wordCount {
+            paragraphs
+            sentences
+            words
+          }
+        }
+      }
+    }
+  }
+`
+
+const IndexPage: React.FC<Props> = ({ data, pageContext }) => {
+  const posts = data && data.allMarkdownRemark.edges
+  console.log(pageContext)
   return (
     <Layout>
       <Seo title="Home" />
       {posts.map(({ node }) => (
-        <>
-          <BlogCard {...node} />
-        </>
+        <BlogCard key={node.id} {...node} />
       ))}
+      <BackTop visibleHeight={30} style={{ position: 'fixed' }} />
     </Layout>
   )
 }
