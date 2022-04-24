@@ -26,7 +26,7 @@ export const LanguageSelector: React.FC = () => {
         position: 'bl',
         autoFitPosition: true,
       }}
-      triggerElement={<Button icon={<IconLanguage />} shape="circle" />}
+      triggerElement={<Button icon={<IconLanguage />} type="text" />}
     >
       {EnumValues.getValues(Language).map((value) => (
         <Option key={value} value={value}>

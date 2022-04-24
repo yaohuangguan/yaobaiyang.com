@@ -21,6 +21,7 @@ export const DarkmodeToggler = () => (
             toggleTheme('light')
           }}
           icon={<IconMoon />}
+          type="text"
         />
       ) : (
         <Button
@@ -29,6 +30,7 @@ export const DarkmodeToggler = () => (
             toggleTheme('dark')
           }}
           icon={<IconSun />}
+          type="text"
         />
       )
     }

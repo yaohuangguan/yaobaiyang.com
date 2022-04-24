@@ -1,9 +1,10 @@
 import * as React from 'react'
 import { Link } from './Link'
 import s from 'styled-components'
-import { Grid, Space, Menu } from '@arco-design/web-react'
+import { Grid, Space } from '@arco-design/web-react'
 import { LanguageSelector } from './LanguageSelector'
 import { DarkmodeToggler } from './DarkmodeToggler'
+import { useTranslation } from 'react-i18next'
 
 const { Row, Col } = Grid
 
@@ -12,8 +13,7 @@ type Props = {
 }
 
 const Header: React.FC<Props> = ({ siteTitle }) => {
-  const isRootPath = window.location.pathname === '/'
-
+  const { t } = useTranslation('global')
   return (
     <StyledHeader>
       <Col flex="auto">
@@ -23,28 +23,12 @@ const Header: React.FC<Props> = ({ siteTitle }) => {
           </StyledLink>
         </BrandTitle>
       </Col>
-
-      {isRootPath && (
-        <Col flex="100px">
+      {window.location.pathname === '/' && (
+        <Col flex="230px">
           <Space>
+            <StyledLink to="/">{t('label.blogs')}</StyledLink>
+            <StyledLink to="/about">{t('label.about')}</StyledLink>
             <LanguageSelector />
-            <Menu mode="horizontal" defaultSelectedKeys={['0']}>
-              <Menu.Item
-                key="0"
-                style={{ padding: 0, marginRight: 38 }}
-                disabled
-              >
-                <StyledLink to="/">Blogs</StyledLink>
-              </Menu.Item>
-              <Menu.Item
-                key="1"
-                style={{ padding: 0, marginRight: 38 }}
-                disabled
-              >
-                <StyledLink to="/about">About</StyledLink>
-              </Menu.Item>
-            </Menu>
-
             <DarkmodeToggler />
           </Space>
         </Col>
@@ -57,12 +41,13 @@ const StyledHeader = s(Row)`
     padding: 50px;
 `
 
-const BrandTitle = s.h3`
+const BrandTitle = s.h2`
     margin: 0;
 `
 
 const StyledLink = s(Link)`
     text-decoration: none;
+    font-size: 19px;
 `
 
 export default Header

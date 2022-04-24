@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Layout } from '../components/Layout'
-import Seo from '../components/SEO'
+import Seo from '../components/Seo'
 
 import { BlogCard } from '@components/BlogCard'
 import { graphql } from 'gatsby'
@@ -34,7 +34,7 @@ export const pageQuery = graphql`
             categories
             cover {
               childImageSharp {
-                gatsbyImageData(width: 700, height: 300)
+                gatsbyImageData(width: 900, height: 300)
               }
             }
             coverAuthor
@@ -60,7 +60,7 @@ export const pageQuery = graphql`
 `
 
 const IndexPage: React.FC<Props> = ({ data, pageContext }) => {
-  const posts = data && data.allMarkdownRemark.edges
+  const posts = data.allMarkdownRemark.edges
   console.log(pageContext)
   return (
     <Layout>

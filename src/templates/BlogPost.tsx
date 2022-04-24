@@ -1,7 +1,6 @@
-import { useSiteMeta } from '@hooks/useSiteMeta'
-import * as React from 'react'
+import React from 'react'
 import { Layout } from '../components/Layout'
-import Seo from '../components/SEO'
+import Seo from '../components/Seo'
 import { graphql } from 'gatsby'
 import { rhythm } from '../utils/typography'
 import s from 'styled-components'
@@ -44,22 +43,16 @@ export const pageQuery = graphql`
 `
 
 const BlogPost = ({ data, pageContext }) => {
-  const siteData = useSiteMeta()
-  console.log(data)
   const { markdownRemark: post } = data
-  const { title: siteTitle } = siteData
-  const { previous, next } = pageContext
-  const publicUrl = `https://www.yaobaiyang.com/${post.fields.slug}`
 
+  const title = post.frontmatter.title
+  const desc = post.frontmatter.description || post.excerpt
+  const keywords = post.frontmatter.keywords
   return (
     <Layout>
-      <Seo
-        title={`${post.frontmatter.title}`}
-        description={post.frontmatter.description || post.excerpt}
-        keywords={post.frontmatter.keywords}
-      />
+      <Seo title={title} description={desc} keywords={keywords} />
 
-      <StyledContent
+      <div
         style={{ marginTop: rhythm(1) }}
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: post.html }}
@@ -69,9 +62,5 @@ const BlogPost = ({ data, pageContext }) => {
     </Layout>
   )
 }
-
-const StyledContent = s.div`
-  font-famlily: FilsonSoftRegular, sans-serif;
-`
 
 export default BlogPost

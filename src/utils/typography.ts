@@ -18,6 +18,7 @@ const BODY_FONT_FAMILY = [
 Wordpress2016.overrideThemeStyles = () => ({
   'h1, h2, h3, h4, h5, h6': {
     marginTop: '2.5rem',
+    marginBottom: '15px',
   },
   'h1, h2': {
     fontFamily: HEADER_FONT_FAMILY.join(','),

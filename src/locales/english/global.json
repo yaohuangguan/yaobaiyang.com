@@ -5,6 +5,8 @@
         "zh": "中文"
     },
     "label": {
-        "read_more": "Read More"
+        "read_more": "Read More",
+        "blogs":"Blogs",
+        "about":"About Me"
     }
 }

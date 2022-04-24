@@ -1,4 +1,4 @@
-import { TFunction } from 'react-i18next'
+import { TFunction } from 'i18next'
 // available name list: https://github.com/iamkun/dayjs/tree/dev/src/locale
 // should match dayjs and react-i18-next
 

@@ -18,11 +18,27 @@ coverAuthor: Toa Heftiba
 coverOriginalUrl: https://unsplash.com/photos/_2HNqkk6FEU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
 ---
 
-Working in [BeeHex](https://www.beehex.com) is just nice and comfortable, people can task themselves on the real world project. 
+Working in Beehex is just nice and comfortable, people can task themselves on the real world project. 
 
-BeeHex current hardware equipment is outstanding and unique in the market,I am proud of us and I hope BeeHex software can also keep growing. With the UserInterfaces for deco-pod and nutri-pod and the cookiecannon,I wish BeeHex could really grasp this huge oppotunity and could really take off. For using the cookiecannon, I suggest we should use the power of google search engine Adwords,Instagram Ads is a good place to advertise the website. Also, YouTube is helpful when we have advertising videos. I like the cookie cannon idea and people going to love it as well. Before we do that , we need to upgrade the database plan and switch to EB and do some traffic testing. Once we can accept large volume of customers and people are getting to know cookiecannon, I think that moment is when BeeHex really enters next level.
+BeeHex current hardware equipment is outstanding and unique in the market.
 
-3 months experience, I really learned a lot and I appreciate this oppotunity to work with awesome people. Thank you Anjan and Ben for the continuous help on everything. After this internship, I feel like I still have a lot to learn, about working, about living,etc.. Just like BeeHex is growing and growing. There might be obstacles on the way to success, but I hope and believe the future of BeeHex is bright and successful.
+I am proud of us and I hope BeeHex software can also keep growing. 
+
+With the UserInterfaces for deco-pod and nutri-pod and the cookiecannon
+
+I wish BeeHex could really grasp this huge oppotunity and could really take off. 
+
+For using the cookiecannon, I suggest we should use the power of google search engine Adwords,Instagram Ads is a good place to advertise the website. 
+
+Also, YouTube is helpful when we have advertising videos. I like the cookie cannon idea and people going to love it as well. 
+
+Before we do that , we need to upgrade the database plan and switch to EB and do some traffic testing. Once we can accept large volume of customers and people are getting to know cookiecannon, I think that moment is when BeeHex really enters next level. 
+
+3 months experience, I really learned a lot and I appreciate this oppotunity to work with awesome people. Thank you Anjan and Ben for the continuous help on everything. 
+
+After this internship, I feel like I still have a lot to learn, about working, about living,etc.. Just like BeeHex is growing and growing. 
+
+There might be obstacles on the way to success, but I hope and believe the future of BeeHex is bright and successful.
 
 
 
