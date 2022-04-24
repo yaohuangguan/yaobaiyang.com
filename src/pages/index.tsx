@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { Layout } from '@components/layout'
-import Seo from '@components/seo'
+import { Layout } from '@components/Layout'
+import Seo from '@components/Seo'
 
-import { BlogCard } from '@components/blog-card'
+import { BlogCard } from '@components/BlogItem'
 import { graphql } from 'gatsby'
 import { BlogItemNode } from '@typings/blogItem'
 import { BackTop } from '@arco-design/web-react'

@@ -5,8 +5,8 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import s from 'styled-components'
-import { Link } from './link'
-import { RandomColorizedTag } from './tag'
+import { Link } from './Link'
+import { RandomColorizedTag } from './RandomColorizedTag'
 
 type Props = BlogItemNode
 
