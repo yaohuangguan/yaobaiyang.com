@@ -1,4 +1,4 @@
-import { Layout, Space } from '@arco-design/web-react'
+import { Layout } from '@arco-design/web-react'
 import type { BlogItemNode } from '@typings/blogItem'
 import aboutReadTime from '@utils/aboutReadTime'
 import { GatsbyImage } from 'gatsby-plugin-image'
@@ -6,7 +6,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import s from 'styled-components'
 import { Link } from './link'
-import { RandomColorizedTag } from './RandomColorizedTag'
+import { RandomColorizedTag } from './Tag'
 
 type Props = BlogItemNode
 
@@ -17,7 +17,6 @@ export const BlogCard: React.FC<Props> = ({
   timeToRead,
 }) => {
   const title = frontmatter.title || fields.slug
-  const date = frontmatter.date
   const categories = frontmatter.categories || []
   const { gatsbyImageData } = frontmatter.cover.childImageSharp
   const { t } = useTranslation('global')
@@ -26,22 +25,20 @@ export const BlogCard: React.FC<Props> = ({
       <h2>
         <StyledLink to={fields.slug}>{title}</StyledLink>
       </h2>
-      <Space direction="vertical">
-        <small>
-          {date} - {aboutReadTime(timeToRead)}
-        </small>
+      <small>
+        {aboutReadTime(timeToRead)}
         {categories.map((tag: string) => (
-          <RandomColorizedTag key={tag}>{tag}</RandomColorizedTag>
+          <RandomColorizedTag key={tag} />
         ))}
-        <StyledLink to={fields.slug}>
-          <GatsbyImage image={gatsbyImageData} alt="cover" />
-        </StyledLink>
-      </Space>
+      </small>
+      <StyledLink to={fields.slug}>
+        <GatsbyImage image={gatsbyImageData} alt="cover" />
+      </StyledLink>
 
       <h6>{excerpt}</h6>
 
       <StyledLink to={fields.slug} className="squiggly">
-        {t('label.read_more')}...
+        {t('label.read_more')}
       </StyledLink>
     </StyleContainer>
   )
