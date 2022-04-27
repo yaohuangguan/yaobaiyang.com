@@ -3,7 +3,7 @@ import React from 'react'
 import { Layout } from '@components/layout'
 import Seo from '@components/seo'
 
-import { BlogCard } from '@components/BlogItem'
+import { BlogItem } from '@components/BlogItem'
 import { graphql } from 'gatsby'
 import { BlogItemNode } from '@typings/blogItem'
 import { BackTop } from '@arco-design/web-react'
@@ -66,7 +66,7 @@ const IndexPage: React.FC<Props> = ({ data, pageContext }) => {
     <Layout>
       <Seo title="Home" />
       {posts.map(({ node }) => (
-        <BlogCard key={node.id} {...node} />
+        <BlogItem key={node.id} {...node} />
       ))}
       <BackTop visibleHeight={30} style={{ position: 'fixed' }} />
     </Layout>

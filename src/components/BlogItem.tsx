@@ -10,7 +10,7 @@ import { RandomColorizedTag } from './RandomColorizedTag'
 
 type Props = BlogItemNode
 
-export const BlogCard: React.FC<Props> = ({
+export const BlogItem: React.FC<Props> = ({
   frontmatter,
   fields,
   excerpt,
