@@ -17,7 +17,6 @@ body {
   --lightgreen: #b4e197;
   --green: #83bd75;
   --hgreen: #4e944f;
-  text-decoration: none;
 
   --textLink: var(--black);
   --textNormal: var(--black);
@@ -80,7 +79,7 @@ header {
 a {
   transition: color 0.2s ease;
   color: var(--black);
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:hover {
   color: var(--green);

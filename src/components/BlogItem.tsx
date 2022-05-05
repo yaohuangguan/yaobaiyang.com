@@ -21,6 +21,7 @@ export const BlogItem: React.FC<Props> = ({
   const categories = frontmatter.categories || []
   const { gatsbyImageData } = frontmatter.cover.childImageSharp
   const { t } = useTranslation('global')
+  console.log(fields)
   return (
     <StyleContainer>
       <h2>

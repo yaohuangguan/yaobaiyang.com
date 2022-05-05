@@ -45,6 +45,7 @@ export const pageQuery = graphql`
             kind
             published
             title
+            language
           }
           html
           timeToRead
@@ -61,7 +62,7 @@ export const pageQuery = graphql`
 
 const IndexPage: React.FC<Props> = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges
-  console.log(pageContext)
+  console.log(data)
   return (
     <Layout>
       <Seo title="Home" />
