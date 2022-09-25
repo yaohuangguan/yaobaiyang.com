@@ -6,7 +6,7 @@
   "author": "Sam",
   "dependencies": {
     "@arco-design/web-react": "^2.32.1",
-    "dayjs": "^1.11.1",
+    "dayjs": "1.11.5",
     "enum-values": "^1.2.1",
     "gatsby": "4.12.1",
     "gatsby-image": "^3.11.0",
