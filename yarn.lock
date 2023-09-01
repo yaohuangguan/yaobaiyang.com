@@ -4358,7 +4358,7 @@ compare-func@^2.0.0:
 
 compass-vertical-rhythm@^1.4.5:
   version "1.4.5"
-  resolved "https://registry.npmmirror.com/compass-vertical-rhythm/-/compass-vertical-rhythm-1.4.5.tgz#4baa8d7068fda164d3675d706775d7547e8750f5"
+  resolved "https://registry.yarnpkg.com/compass-vertical-rhythm/-/compass-vertical-rhythm-1.4.5.tgz#4baa8d7068fda164d3675d706775d7547e8750f5"
   integrity sha512-bJo3IYX7xmmZCDYjrT2XolaiNjGZ4E2JvUGxpdU0ecbH4ZLK786wvc8aHKVrGrKct9JlkmJbUi8YLrQWvOc+uA==
   dependencies:
     convert-css-length "^1.0.1"
@@ -4447,7 +4447,7 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
 
 console-polyfill@^0.1.2:
   version "0.1.2"
-  resolved "https://registry.npmmirror.com/console-polyfill/-/console-polyfill-0.1.2.tgz#96cfed51caf78189f699572e6f18271dc37c0e30"
+  resolved "https://registry.yarnpkg.com/console-polyfill/-/console-polyfill-0.1.2.tgz#96cfed51caf78189f699572e6f18271dc37c0e30"
   integrity sha512-oHLGQmf0q2yuuqfTXuzAB5UMqgPH1cHdwLkjfCqRTG2eupc52jbXT1OtOlREv+yXmXRi3wqywAevz3qMSk90Hg==
 
 content-disposition@0.5.4:
@@ -4493,7 +4493,7 @@ conventional-commits-parser@^3.2.2:
 
 convert-css-length@^1.0.1:
   version "1.0.2"
-  resolved "https://registry.npmmirror.com/convert-css-length/-/convert-css-length-1.0.2.tgz#32f38a8ac55d78372ff43562532564366c871ccc"
+  resolved "https://registry.yarnpkg.com/convert-css-length/-/convert-css-length-1.0.2.tgz#32f38a8ac55d78372ff43562532564366c871ccc"
   integrity sha512-ecV7j3hXyXN1X2XfJBzhMR0o1Obv0v3nHmn0UiS3ACENrzbxE/EknkiunS/fCwQva0U62X1GChi8GaPh4oTlLg==
   dependencies:
     console-polyfill "^0.1.2"
@@ -4921,7 +4921,7 @@ decamelize-keys@^1.1.0:
 
 decamelize@^1.1.0, decamelize@^1.2.0:
   version "1.2.0"
-  resolved "https://registry.npmmirror.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
+  resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha512-z2S+W9X73hAUUki+N+9Za2lBlun89zigOyGrsax+KUQ6wKW4ZoWpEYBkGhQjwAjjDCkWxhY0VKEhk8wzY7F5cA==
 
 decode-uri-component@^0.2.0:
@@ -7397,7 +7397,7 @@ gray-matter@^4.0.3:
 
 gray-percentage@^2.0.0:
   version "2.0.0"
-  resolved "https://registry.npmmirror.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
+  resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
   integrity sha512-T0i4bwJoXbweuBM7bJwil9iHVAwXxmS9IFsEy27cXvRYxHwR2YVSBSXBjJw4EDKUvLpfjANeT5PrvTuAH1XnTw==
 
 gzip-size@5.1.1:
@@ -8913,7 +8913,7 @@ lodash.has@^4.0:
 
 lodash.isnumber@^3.0.0:
   version "3.0.3"
-  resolved "https://registry.npmmirror.com/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz#3ce76810c5928d03352301ac287317f11c0b1ffc"
+  resolved "https://registry.yarnpkg.com/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz#3ce76810c5928d03352301ac287317f11c0b1ffc"
   integrity sha512-QYqzpfwO3/CWf3XP+Z+tkQsfaLL/EnUlXWVkIk5FUPc4sBdTehEqZONuyRt2P67PXAk+NXmTBcc97zw9t1FQrw==
 
 lodash.iteratee@^4.5.0:
@@ -9555,7 +9555,7 @@ mkdirp@^0.5.1, mkdirp@^0.5.4, mkdirp@~0.5.1:
 
 modularscale@^1.0.2:
   version "1.0.2"
-  resolved "https://registry.npmmirror.com/modularscale/-/modularscale-1.0.2.tgz#4a8f13af32a5e5214fc6e2cfc529064abfd7d877"
+  resolved "https://registry.yarnpkg.com/modularscale/-/modularscale-1.0.2.tgz#4a8f13af32a5e5214fc6e2cfc529064abfd7d877"
   integrity sha512-xfu46hZcAL9xU8S/RihHE49rmDYRAg36lQez49pcO6/aLBJ7cfVr5DH7Obo2PGKTCSAyy4iTAsWZa9apECK9mQ==
   dependencies:
     lodash.isnumber "^3.0.0"
@@ -10318,7 +10318,7 @@ parse-srcset@^1.0.2:
 
 parse-unit@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.npmmirror.com/parse-unit/-/parse-unit-1.0.1.tgz#7e1bb6d5bef3874c28e392526a2541170291eecf"
+  resolved "https://registry.yarnpkg.com/parse-unit/-/parse-unit-1.0.1.tgz#7e1bb6d5bef3874c28e392526a2541170291eecf"
   integrity sha512-hrqldJHokR3Qj88EIlV/kAyAi/G5R2+R56TBANxNMy0uPlYcttx0jnMW6Yx5KsKPSbC3KddM/7qQm3+0wEXKxg==
 
 parse-url@^6.0.0:
@@ -11190,9 +11190,9 @@ react-transition-group@^4.3.0:
     prop-types "^15.6.2"
 
 react-typography@^0.16.20:
-  version "0.16.20"
-  resolved "https://registry.npmmirror.com/react-typography/-/react-typography-0.16.20.tgz#6861fef52ab3156eda334cbe110fb66646340f57"
-  integrity sha512-xRDlR5mYA/NI2WAc/DPvmODWK5UvY6LsjzPEeiT5X1yXUDpqFAFnWi/m5atrAtaIOeZqT982DQM+Cy8Io+jVFg==
+  version "0.16.23"
+  resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.23.tgz#68c0af17ed876a30fcea256ef0dbbf0bc01b63b3"
+  integrity sha512-nOl1/VDhqYSp5XktW/xmeLgE2S4L0LIWKAq2lNtc6Tq+3ZgvSX2Q0r0vlLKyOVq0hjsOYubE1TLoz/Wu/W8GLg==
 
 react-universal-interface@^0.6.2:
   version "0.6.2"
@@ -13065,7 +13065,7 @@ typography-breakpoint-constants@^0.16.19:
 
 typography-normalize@^0.16.19:
   version "0.16.19"
-  resolved "https://registry.npmmirror.com/typography-normalize/-/typography-normalize-0.16.19.tgz#58e0cf12466870c5b27006daa051fe7307780660"
+  resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.16.19.tgz#58e0cf12466870c5b27006daa051fe7307780660"
   integrity sha512-vtnSv/uGBZVbd4e/ZhZB9HKBgKKlWQUXw74+ADIHHxzKp27CEf8PSR8TX1zF2qSyQ9/qMdqLwXYz8yRQFq9JLQ==
 
 typography-theme-wordpress-2016@^0.16.19:
@@ -13077,9 +13077,9 @@ typography-theme-wordpress-2016@^0.16.19:
     typography-breakpoint-constants "^0.16.19"
 
 typography@^0.16.21:
-  version "0.16.21"
-  resolved "https://registry.npmmirror.com/typography/-/typography-0.16.21.tgz#2cd177f20c64d0b762389464688811f980ade682"
-  integrity sha512-e8Hcg7WdvM9B9PI7hpk8Xg0jYVd0KHB26JAR+V6UZ8qe0mOsdd/Fnt8Zctrpahu6KmOy7LqUq6kYKPcYPEh9Zw==
+  version "0.16.24"
+  resolved "https://registry.yarnpkg.com/typography/-/typography-0.16.24.tgz#7bcbe3921367ca74168d0acce969749a0546fd4d"
+  integrity sha512-o5jNctzGoJm2XgdqivJdpkF6lQkcQo8v1biMGY+rLSpBHhpCKdQv5em9S3R6igApxVYtbhNBJbV95vK9oPwRKQ==
   dependencies:
     compass-vertical-rhythm "^1.4.5"
     decamelize "^1.2.0"
